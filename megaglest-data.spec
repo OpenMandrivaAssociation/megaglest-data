@@ -1,11 +1,11 @@
 Name:		megaglest-data
-Version:	3.5.2.4
+Version:	3.6.0
 Release:	%mkrel 0.1
 Summary:	Mega Glest data files
 License:	Creative Commons Attribution
 Group:		Games/Strategy
 Url:		http://megaglest.org/
-Source0:	http://sourceforge.net/projects/megaglest/files/current_release/megaglest-data-3.5.2.4.tar.xz
+Source0:	http://sourceforge.net/projects/megaglest/files/current_release/megaglest-data-3.6.0.1.tar.xz
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
