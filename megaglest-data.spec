@@ -40,3 +40,22 @@ within the game at no cost.
 %files
 %defattr(644,root,root,755)
 %{_gamesdatadir}/megaglest
+
+
+%changelog
+* Sat Jan 28 2012 Paulo Andrade <pcpa@mandriva.com.br> 3.6.0.3-0.1mdv2012.0
++ Revision: 769484
+- Update to latest upstream release.
+
+* Sun Dec 18 2011 Paulo Andrade <pcpa@mandriva.com.br> 3.6.0-0.1
++ Revision: 743595
+- Update to latest upstream release.
+
+  + Zombie Ryushu <ryushu@mandriva.org>
+    - Fix release tag for 2010.2 backport
+
+* Thu Sep 08 2011 Paulo Andrade <pcpa@mandriva.com.br> 3.5.2.4-1
++ Revision: 698915
+- MegaGlest 3.5.2.4 data files
+- MegaGlest 3.5.2.4 data files
+
