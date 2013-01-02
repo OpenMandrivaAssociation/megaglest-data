@@ -1,14 +1,12 @@
 Name:		megaglest-data
-Version:	3.6.0.3
-Release:	%mkrel 0.1
+Version:	3.7.1
+Release:	1
 Summary:	Mega Glest data files
 License:	Creative Commons Attribution
 Group:		Games/Strategy
 Url:		http://megaglest.org/
-Source0:	http://sourceforge.net/projects/megaglest/files/current_release/megaglest-data-3.6.0.3.tar.xz
+Source0:	http://downloads.sourceforge.net/project/megaglest/megaglest_%{version}/%{name}-%{version}.tar.xz
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-
 BuildRequires:	cmake
 
 %description
@@ -35,14 +33,18 @@ within the game at no cost.
 #-----------------------------------------------------------------------
 %install
 %makeinstall_std -C build
+rm -fr %{buildroot}%{_gamesdatadir}/megaglest/docs
 
 #-----------------------------------------------------------------------
 %files
-%defattr(644,root,root,755)
+%doc docs/*
 %{_gamesdatadir}/megaglest
 
 
 %changelog
+* Wed Jan 02 2013 pcpa <paulo.cesar.pereira.de.andrade@gmail.com> - 3.7.1-1
+- Update to latest upstream release.
+
 * Sat Jan 28 2012 Paulo Andrade <pcpa@mandriva.com.br> 3.6.0.3-0.1mdv2012.0
 + Revision: 769484
 - Update to latest upstream release.
