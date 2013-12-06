@@ -1,5 +1,5 @@
 Name:		megaglest-data
-Version:	3.7.1
+Version:	3.9.0
 Release:	1
 Summary:	Mega Glest data files
 License:	Creative Commons Attribution
@@ -39,25 +39,3 @@ rm -fr %{buildroot}%{_gamesdatadir}/megaglest/docs
 %files
 %doc docs/*
 %{_gamesdatadir}/megaglest
-
-
-%changelog
-* Wed Jan 02 2013 pcpa <paulo.cesar.pereira.de.andrade@gmail.com> - 3.7.1-1
-- Update to latest upstream release.
-
-* Sat Jan 28 2012 Paulo Andrade <pcpa@mandriva.com.br> 3.6.0.3-0.1mdv2012.0
-+ Revision: 769484
-- Update to latest upstream release.
-
-* Sun Dec 18 2011 Paulo Andrade <pcpa@mandriva.com.br> 3.6.0-0.1
-+ Revision: 743595
-- Update to latest upstream release.
-
-  + Zombie Ryushu <ryushu@mandriva.org>
-    - Fix release tag for 2010.2 backport
-
-* Thu Sep 08 2011 Paulo Andrade <pcpa@mandriva.com.br> 3.5.2.4-1
-+ Revision: 698915
-- MegaGlest 3.5.2.4 data files
-- MegaGlest 3.5.2.4 data files
-
