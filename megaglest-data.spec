@@ -1,5 +1,5 @@
 Name:		megaglest-data
-Version:	3.9.0
+Version:	3.9.1
 Release:	1
 Summary:	Mega Glest data files
 License:	Creative Commons Attribution
