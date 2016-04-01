@@ -1,11 +1,11 @@
 Name:		megaglest-data
-Version:	3.11.1
+Version:	3.12.0
 Release:	1
 Summary:	Mega Glest data files
 License:	Creative Commons Attribution
 Group:		Games/Strategy
 Url:		http://megaglest.org/
-Source0:	https://github.com/MegaGlest/megaglest-data/releases/download/%{version}/%{name}-%{version}.tar.xz
+Source0:	https://github.com/MegaGlest/megaglest-data/releases/download/%{version}/%{name}-%{version}.b1.tar.xz
 BuildArch:	noarch
 BuildRequires:	cmake
 
@@ -24,10 +24,9 @@ within the game at no cost.
 #-----------------------------------------------------------------------
 %build
 %cmake									\
-	-DCMAKE_INSTALL_PREFIX=/					\
 	-DMEGAGLEST_BIN_INSTALL_PATH=%{_gamesbindir}			\
-	-DMEGAGLEST_ICON_INSTALL_PATH=%{_iconsdir}			\
-	-DMEGAGLEST_DATA_INSTALL_PATH=%{_gamesdatadir}/megaglest
+	-DMEGAGLEST_ICON_INSTALL_PATH=%{_datadir}/icons/hicolor/48x48/apps	\
+	-DMEGAGLEST_DATA_INSTALL_PATH=%{_datadir}/games/megaglest
 %make
 
 #-----------------------------------------------------------------------
@@ -35,7 +34,15 @@ within the game at no cost.
 %makeinstall_std -C build
 rm -fr %{buildroot}%{_gamesdatadir}/megaglest/docs
 
+rm -f %{buildroot}%{_iconsdir}/hicolor/48x48/apps/megaglest.xpm
+
+# Remove unused Debian menu
+rm -rf %{buildroot}%{_datadir}/menu
+
 #-----------------------------------------------------------------------
 %files
 %doc docs/*
 %{_gamesdatadir}/megaglest
+%{_datadir}/appdata/megaglest*.appdata.xml
+%{_datadir}/applications/megaglest*.desktop
+%{_iconsdir}/hicolor/48x48/apps/megaglest.png
