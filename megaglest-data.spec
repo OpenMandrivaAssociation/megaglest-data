@@ -1,6 +1,6 @@
 Name:		megaglest-data
 Version:	3.13.0
-Release:	1
+Release:	2
 Summary:	Mega Glest data files
 License:	Creative Commons Attribution
 Group:		Games/Strategy
