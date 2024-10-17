@@ -4,7 +4,7 @@ Release:	2
 Summary:	Mega Glest data files
 License:	Creative Commons Attribution
 Group:		Games/Strategy
-Url:		http://megaglest.org/
+Url:		https://megaglest.org/
 Source0:	https://github.com/MegaGlest/megaglest-data/releases/download/%{version}/%{name}-%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	cmake
